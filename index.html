@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/fm.revealator.jquery.min.css">
+	<script type="text/javascript" src="libs/jquery.min.js"></script>
+	<script type="text/javascript" src="libs/fm.revealator.jquery.min.js"></script>
+
+</head>
+<body>
+
+	<!-- ========================================= MAIN-section======================================= -->
+
+	<section class="main-section" id="main-section">
+		<!-- 	<div class="speedy">Ваш сайт ускорен на <span>146%</span></div> -->
+		<div class="feedback close">
+			<div class="feedback__window">
+				<div class="feedback__window_close-cross"></div>
+				<div class="feedback__window_title">Свяжитесь с нами</div>
+				<div class="feedback__window_subtitle">Правильное ускорение сайтов: устраняем реальные причины</div>
+				<div class="feedback__window_form">	
+					<form action="send.php" name="feedback">
+						<input type="text" placeholder="имя">
+						<input type="tel" placeholder="телефон">
+						<input type="email" placeholder="email">
+						<div class="checkbox">
+							<input type="checkbox" class="checkbox-square" name="policy" required>
+							<label for="policy">Я даю согласие на обработку моих персональных данных. <a href="https://foundation.wikimedia.org/wiki/Privacy_policy">Политика конфиденциальности</a></label>
+						</div>
+						<textarea name="comment" id="comment" placeholder="комментарий"></textarea>
+						<div class="input_file_wrapper">
+							<label class="input_file_label"><input type="file" class="input_file">прикрепите файлы <span>или перетащите</span></label>
+						</div>
+						<input type="submit" class="submit button">
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="main-section__wrapper wrapper">
+			<div class="main-section__header">
+				<div class="main-section__header_logo">
+					<img src="img/main_logo.png" alt="It Angels Logo">
+				</div>
+				<nav class="main-section__navigation">
+					<ul>
+						<li class="drop_menu"><a href="#services">услуги</a></li>
+						<li><a href="#licencies">лицензии 1с-битрикс</a></li>
+						<li><a href="#contacts">контакты</a></li>
+					</ul>
+					<div class="submenu">
+						<a href="#">Оптимизация CSS</a>
+						<a href="#">Оптимизация JS</a>
+						<a href="#">Настройка TLS </a>
+						<a href="#">Nginx / Apache</a>
+						<a href="#">Настройка TCP/IP </a>
+						<a href="#">Настройка SQL </a>
+						<a href="#">Компрессор</a>
+					</div>
+				</nav>
+				<nav class="button main-section__header_feedback">Обратная связь</nav>
+			</div>
+			<div class="main-section__content">
+				<div class="revealator-zoomout revealator-once revealator-duration5 notebook"><img src="img/main_notebook.png" alt="notebook"></div>
+				<div class="revealator-slideup revealator-once revealator-duration20 revealator-delay20 rocket"><img src="img/main_rocket-1.png" alt="rocket"></div>
+				<h1 class="main-section__content_title">Ускорение сайтов на 1С-Битрикс</h1>
+				<div class="main-section__content_features revealator-slideup revealator-once  revealator-delay10">
+					<ul>
+						<li>Комплексный аудит</li>
+						<li>Оптимизация серверной части</li>
+						<li>Оптимизация клиентской части</li>
+					</ul>
+				</div>
+				<div class="button main-section__content_button">Ускорить сайт</div>
+			</div>
+		</div>
+	</section>
+	<!-- ========================================= service-section======================================= -->
+	
+	<section class="service-section" id="service-section">
+		<div class="service-section__wrapper wrapper">
+			<div class="service-section__content">
+				<div class="service-section__content_picture revealator-slideright revealator-duration3 revealator-once">
+					<img src="img/main_notebook-graph.png" alt="notebook">
+				</div>
+				<div class="service-section__content_article">
+					<div class="section_title service_title">Эта услуга для тех, кто:</div>
+					<div class="service__description">
+						<div class="service__description_who revealator-slideleft revealator-delay5 revealator-once">
+							<img src="img/service_logo-1.png" alt="logo">
+							<p>Понимает, что у сайта проблемы со скоростью загрузки</p>
+						</div>
+						<div class="service__description_who revealator-slideleft revealator-delay10 revealator-once">
+							<img src="img/service_logo-2.png" alt="logo">
+							<p>Работает над увеличением трафика из поисковых систем</p>
+						</div>
+						<div class="service__description_who revealator-slideleft revealator-delay15 revealator-once">
+							<img src="img/service_logo-3.png" alt="logo">
+							<p>Стремится увеличить конверсию сайта за счёт снижения отказов</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- ==================================== === expert-section ======================================== -->
+
+	<section class="expert-section" id="expert-section">
+		<div class="expert-section__wrapper wrapper">
+			<div class="expert-section__content">
+				<div class="section_title">Экспертность</div>
+				<div class="expert-section__conetnt_article">
+					<p>Мы работаем с Битрикс с 2015 года и специализируемся именно на нём.</p>
+					<p>Эта услуга не распространяется на другие фреймворки и CMS.</p>
+					<p>Наши специалисты проходят обучнение и имеют сертификаты от 1С Битрикс.</p>
+				</div>
+				<div class="expert-section__conetnt_picture">
+					<img src="img/expert_tablet.jpg" alt="tablet">
+				</div>
+				<div class="expert-section__conetnt_picture-description">В нашем арсенале имеются собственные модули для ускорения сайта, которые доступны в маркетплейс Битрикс:</div>
+				<div class="expert-section__conetnt_converters">
+				<div class="converter-wrapper">
+					<div class="converter unhover" >
+						<div class="converter_logo"><img src="img/webp_logo.png" alt="webp logo"></div>
+						<div class="converter_description">Webp - Конвертер изображений  в современный формат «на лету»
+						</div>
+					</div>
+					<div class="converter hover">
+						<div class="converter-hover_title">Webp - Конвертер  изображений в современный  формат «на лету»</div>
+						<div class="converter-hover_subtitle">The most sought-after page builder among all kinds of users is Elementor Page Builder.</div>
+						<div class="converter-hover_button button">Подробнее</div>
+					</div>
+				</div>
+				<div class="converter-wrapper">
+					<div class="converter unhover">
+						<div class="converter_logo"><img src="img/preloader_logo.jpg" alt="webp logo"></div>
+						<div class="converter_description">Предзагрузчик ресурсов</div>
+					</div>
+					<div class="converter hover">
+						<div class="converter-hover_title">Предзагрузчик ресурсов</div>
+						<div class="converter-hover_subtitle">he most sought-after page builder among all kinds of users is Elementor Page Builder.</div>
+						<div class="button converter-hover_button">Подробнее</div>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- ================================================audit section============================================= -->
+	<section class="audit-section" id="audit-section">
+		<div class="audit-section_wrapper wrapper">
+			<div class="section_title">Комплексный аудит сайта и выявление точек роста</div>
+			<div class="audit-section__content">
+				<div class="audit-section_tabs">
+					<div class="tabs__header">
+						<div class="tabs__header_title" select="server">Сервер</div>
+						<div class="tabs__header_title backend" select="backend">Backend</div>
+						<div class="tabs__header_title frontend shown" select="frontend">Frontend</div>
+					</div>
+					<div class="tabs__content">
+						<div class="tabs__content_pictures">
+							<div class="picture server">
+								<img src="img/audit_server.png" alt="server">
+							</div>
+							<div class="picture backend">
+								<img src="img/audit_backend.png" alt="server">
+							</div>
+							<div class="picture frontend shown">
+								<img src="img/audit_frontend.png" alt="frontend">
+							</div>
+						</div>
+						<div class="tabs__content_description">
+							<div class="description server">
+								<div class="description_title">Server</div>
+								<div class="description_article">
+									<ul>
+										<li>Ищем ошибки на серверах</li>
+										<li>Проверяем кеширование ресурсов сервером</li>
+										<li>Проверяем процесс загрузки сервера</li>
+										<li>Находим подключение излишних ресурсов</li>
+										<li>Изучаем возможность перехода на другой хостинг</li>
+										<li>Подключаем виртуальный хостинг</li>
+										<li>Проверяем возможность ускорения отклика сервера за счёт:
+											<ol>
+												<li>Увеличения ОЗУ </li>
+												<li>Перехода на новые технологии</li>
+												<li>Дефрагментации HDD</li>
+												<li>Установки SSD</li>
+												<li>Использования многопроцессорных систем</li>
+											</ol>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="description backend">
+								<div class="description_title">Backend</div>
+								<div class="description_article">
+									<ul>
+										<li>Оптимизируем БЭК</li>
+										<li>Проверяем кеширование ресурсов CMS</li>
+										<li>Делаем почтовый сервер</li>
+										<li>Делаем подключение  ресурсов</li>
+										<li>Проверяем скрипты, выполнение которых можно отложить</li>
+										<li>Измеряем возможность ускорения</li>
+										<li>Делаем все что надо за счёт:
+											<ol>
+												<li>Увеличения оптимизации ресурсов</li>
+												<li>Трансформации на современные форматы ресурсов</li>
+												<li>Оптимизации баз данных</li>
+												<li>Быстрой загрузки баз данных</li>
+												<li>Использования SQL</li>
+											</ol>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="description frontend shown">
+								<div class="description_title">Frontend</div>
+								<div class="description_article">
+									<ul>
+										<li>Ищем ошибки в JS</li>
+										<li>Проверяем кеширование ресурсов браузером</li>
+										<li>Изучаем процесс загрузки и исполнения скриптов</li>
+										<li>Ищем подключение излишних ресурсов</li>
+										<li>Ищем скрипты, выполнение которых можно отложить</li>
+										<li>Проверяем возможность сокращения структуры DOM</li>
+										<li>Проверяем возможность уменьшения веса страниц за счёт:
+											<ol>
+												<li>Уменьшения размеров изображений</li>
+												<li>Перехода на современные форматы изображений и видео</li>
+												<li>Оптимизации изображений</li>
+												<li>Ленивой загрузки изображений, видео и iframe</li>
+												<li>Использования CDN</li>
+											</ol>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="audit-section_notify">По результатам комплексного аудита будет сформирован подробный отчёт с конкретными рекомендациями по каждому пункту. Из отчёта станет ясен объем работ, необходимый для достижения максимальной производительности и скорости загрузки сайта. Также будет дан прогноз скорости сайта после проведения всех работ по оптимизации</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- ================================================prices section============================================= -->
+	<!-- ================================================SCRIPTS============================================= -->
+	<script type="text/javascript">
+		let drop_menu = document.querySelector(".drop_menu");
+		let sub_menu = document.querySelector(".submenu");
+		drop_menu.onclick = function(){
+			sub_menu.classList.toggle("open");
+		}
+	</script>
+	<script>
+		$(document).ready( function() {
+		    $(".input_file").change(function(){
+		         var filename = $(this).val().replace(/.*\\/, "");
+		         $(".input_file_label span").html(filename);
+		    });
+
+		    $(".feedback__window_close-cross").click(function(){
+		    	$(".feedback,.feedback__window").addClass("close");
+		    })
+		    $(".main-section__header_feedback").click(function(){
+		    	$(".feedback, .feedback__window").removeClass("close");
+		    })
+		    $(".main-section__content_button").click(function(){
+		    	$(".rocket").css("animation", "fly 5s linear forwards");
+		    	 // setTimeout(function(){
+		  //   	$(".speedy").css("transform", "translateY(0)");
+				// }, 3000);
+		  //   	setTimeout(function(){
+		  //   	$(".speedy").css("transform", "translateY(-200%)");
+				// }, 6000);
+			})
+			$(".converter-wrapper").hover(
+				function(){
+					$(this).children(".converter.unhover").css("opacity", "0");
+					$(this).children(".converter.hover").css("opacity", "1");
+
+				},
+				function(){
+					$(".converter.unhover").css("opacity", "1");
+					$(".converter.hover").css("opacity", "0");
+					;
+				}
+			);
+			$(".tabs__header_title").click(function(){
+				$(".tabs__header_title").removeClass("shown");
+				$(this).addClass("shown");
+				let select = $(this).attr("select");
+				$(".tabs__content_pictures .picture, .tabs__content_description .description").removeClass("shown");
+				$(".tabs__content_pictures .picture, .tabs__content_description .description").filter("."+select).addClass("shown");
+			})
+		});
+	</script>
+</body>
+</html>
