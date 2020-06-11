@@ -1,0 +1,365 @@
+@media (max-width: 1280px) {
+  .cokes {
+    bottom: 10px; }
+  .feedback__window {
+    width: 90%;
+    height: 90%; }
+  .wrapper {
+    padding-left: 20px;
+    padding-right: 20px; }
+  .header .wrapper {
+    margin-left: 0;
+    margin-right: 0;
+    height: 90px;
+    width: 100%;
+    padding: 5px 20px 20px; }
+  .header_logo {
+    width: 120px; }
+  .notebook {
+    width: 500px; }
+  .rocket {
+    width: 200px; }
+  .main-section__content {
+    padding-left: 30px; }
+    .main-section__content_title {
+      font-size: 44px; }
+    .main-section__content_features {
+      font-size: 20px; }
+  .tile_description {
+    width: 90%; }
+  .tile__options_option {
+    width: 90%; }
+  .footer-section__contacts {
+    width: 30%; }
+  .footer-section__menu {
+    padding-left: 20px;
+    width: 20%; }
+  .footer-section__copyright {
+    width: 25%; }
+  .footer-section__logo {
+    width: 25%; } }
+
+@media (max-width: 992px) {
+  .cokes {
+    max-width: 90%;
+    left: -webkit-calc(50% - 45%);
+    left: calc(50% - 45%);
+    height: 50px; }
+    .cokes_content {
+      font-size: 10px; }
+    .cokes_button {
+      height: 65%; }
+  .header .wrapper {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .header__navigation {
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    padding-bottom: 0;
+    width: 55%; }
+    .header__navigation ul li {
+      font-size: 12px;
+      text-shadow: 0px 0px 3px #000; }
+  .header_feedback {
+    width: 20%;
+    height: 25px;
+    font-size: 12px; }
+  .header_logo {
+    width: 15%; }
+  .main-section {
+    height: 500px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative; }
+    .main-section__wrapper {
+      padding-top: 0;
+      width: 100%; }
+    .main-section__content_title {
+      font-size: 32px;
+      width: 40%;
+      margin-bottom: 20px; }
+    .main-section__content_features {
+      font-size: 16px;
+      margin-bottom: 20px; }
+    .main-section__content_button {
+      width: 25%; }
+    .main-section__content .notebook {
+      right: 50px;
+      width: 480px;
+      bottom: 50px;
+      top: auto; }
+    .main-section__content .rocket {
+      right: 50px;
+      top: auto;
+      bottom: 180px; }
+  .service__description_who p {
+    font-size: 14px; }
+  .section_title {
+    font-size: 28px; }
+  .expert-section__conetnt_article {
+    font-size: 18px; }
+  .converter {
+    height: 150px; }
+  .converter_description {
+    font-size: 16px; }
+  .converter-hover_title {
+    font-size: 14px; }
+  .converter-hover_subtitle {
+    font-size: 12px; }
+  .converter-hover_button {
+    height: 20%;
+    width: 50%;
+    border-radius: 5px; }
+  .tabs__header {
+    margin-bottom: 20px; }
+  .tabs__content {
+    height: 300px; }
+  .tabs__content .description_title {
+    padding-left: 20px;
+    margin-bottom: 10px; }
+  .description_article ul li {
+    line-height: 1.3; }
+  .description_article ol {
+    padding-top: 10px; }
+    .description_article ol li {
+      font-size: 12px; }
+  .audit-section_notify {
+    line-height: 1;
+    font-size: 14px;
+    margin-bottom: 0;
+    padding-bottom: 10px; }
+    .audit-section_notify:before {
+      height: 100%; }
+  .prices-section_subtitle {
+    padding: 15px 20px; }
+  .tile_price {
+    font-size: 24px; }
+  .prices-section__footer {
+    padding: 0 20px;
+    margin-top: 30px; }
+    .prices-section__footer_button {
+      width: 40%;
+      font-size: 13px; }
+  .contacts-section_wrapper {
+    height: 500px; }
+    .contacts-section_wrapper .feedback__window_form {
+      width: 90%; }
+      .contacts-section_wrapper .feedback__window_form .checkbox {
+        width: 48%; }
+      .contacts-section_wrapper .feedback__window_form .checkbox-square {
+        height: 20px;
+        width: 20px; }
+    .contacts-section_wrapper .feedback__window_form input, .contacts-section_wrapper textarea, .contacts-section_wrapper .checkbox, .contacts-section_wrapper .input_file_wrapper {
+      width: 48%; }
+  .footer-section__contacts a {
+    font-size: 12px;
+    line-height: 1.2; }
+  .footer-section__menu {
+    width: 25%;
+    font-size: 12px;
+    line-height: 1.2; }
+  .footer-section__copyright {
+    width: 30%;
+    font-size: 12px; }
+  .footer-section__logo {
+    width: 20%;
+    font-size: 10px; } }
+
+@media (max-width: 767px) {
+  .main-section {
+    background-position-x: 38%;
+    height: 600px; }
+  .header .wrapper {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 60px; }
+  .header__navigation ul {
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end; }
+    .header__navigation ul li:first-child {
+      font-size: 10px;
+      padding-right: 12px; }
+      .header__navigation ul li:first-child:after {
+        top: 0; }
+    .header__navigation ul li a {
+      font-size: 10px; }
+  .header_feedback {
+    text-align: center;
+    font-size: 10px; }
+  .main-section__content_title {
+    width: 100%;
+    font-size: 26px; }
+  .main-section__content_button {
+    width: 35%;
+    height: 30px; }
+  .main-section__content .notebook {
+    width: 380px;
+    height: 190px;
+    top: auto;
+    bottom: 5px;
+    right: 20px;
+    z-index: 2; }
+  .main-section__content .rocket {
+    top: auto;
+    bottom: 130px;
+    right: 20px;
+    width: 200px;
+    z-index: 1; }
+  .service-section {
+    height: auto; }
+  .service__description {
+    padding-top: 20px; }
+    .service__description_who p {
+      font-size: 20px;
+      padding-bottom: 0; }
+  .service-section__content {
+    padding-top: 60px;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .service-section__content_picture {
+      -webkit-box-ordinal-group: 2;
+      -webkit-order: 1;
+          -ms-flex-order: 1;
+              order: 1;
+      width: 80%; }
+    .service-section__content_article {
+      width: 100%;
+      padding-left: 0; }
+  .expert-section__conetnt_converters {
+    height: 150px; }
+  .converter_description {
+    font-size: 12px; }
+  .converter-hover_title, .converter-hover_subtitle, .converter-hover_button {
+    width: 90%;
+    font-size: 12px; }
+  .tabs__content {
+    height: 600px;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+    .tabs__content_pictures {
+      width: 100%; }
+      .tabs__content_pictures .picture {
+        width: 100%;
+        height: 300px;
+        left: -webkit-calc(50% - 50%);
+        left: calc(50% - 50%);
+        overflow: hidden; }
+        .tabs__content_pictures .picture img {
+          width: auto;
+          height: 100%; }
+    .tabs__content_description {
+      width: 100%; }
+    .tabs__content .description_article ul li {
+      padding-bottom: 5px; }
+  .audit-section_notify {
+    font-size: 12px;
+    padding-top: 20px;
+    line-height: 1.32; }
+  .prices-section_wrapper {
+    padding-top: 60px; }
+  .prices-section__content {
+    height: 400px; }
+  .tile_button {
+    width: 90%;
+    height: 35px;
+    margin-bottom: 10px; }
+  .tile__options_option {
+    font-size: 12px; }
+  .tile_description {
+    font-size: 11px; }
+  .tile_price {
+    font-size: 14px; }
+  .tile_title {
+    font-size: 16px; }
+  .tile__options_option {
+    height: 50px; }
+  .prices-section__footer_text {
+    font-size: 18px;
+    width: 50%; }
+  .prices-section__footer_button {
+    font-size: 12px;
+    width: 50%; }
+  .contacts-section_wrapper {
+    padding-top: 60px; }
+  .contacts-section_wrapper .feedback__window_form, .feedback__window_form {
+    padding-top: 20px; }
+    .contacts-section_wrapper .feedback__window_form form input, .contacts-section_wrapper .feedback__window_form form textarea, .contacts-section_wrapper .feedback__window_form form .checkbox, .contacts-section_wrapper .feedback__window_form form .input_file_wrapper, .feedback__window_form form input, .feedback__window_form form textarea, .feedback__window_form form .checkbox, .feedback__window_form form .input_file_wrapper {
+      font-size: 12px;
+      padding-left: 10px; }
+      .contacts-section_wrapper .feedback__window_form form input span, .contacts-section_wrapper .feedback__window_form form textarea span, .contacts-section_wrapper .feedback__window_form form .checkbox span, .contacts-section_wrapper .feedback__window_form form .input_file_wrapper span, .feedback__window_form form input span, .feedback__window_form form textarea span, .feedback__window_form form .checkbox span, .feedback__window_form form .input_file_wrapper span {
+        font-size: 10px; }
+      .contacts-section_wrapper .feedback__window_form form input::-webkit-input-placeholder, .contacts-section_wrapper .feedback__window_form form textarea::-webkit-input-placeholder, .contacts-section_wrapper .feedback__window_form form .checkbox::-webkit-input-placeholder, .contacts-section_wrapper .feedback__window_form form .input_file_wrapper::-webkit-input-placeholder, .feedback__window_form form input::-webkit-input-placeholder, .feedback__window_form form textarea::-webkit-input-placeholder, .feedback__window_form form .checkbox::-webkit-input-placeholder, .feedback__window_form form .input_file_wrapper::-webkit-input-placeholder {
+        font-size: 12px; }
+      .contacts-section_wrapper .feedback__window_form form input::-moz-placeholder, .contacts-section_wrapper .feedback__window_form form textarea::-moz-placeholder, .contacts-section_wrapper .feedback__window_form form .checkbox::-moz-placeholder, .contacts-section_wrapper .feedback__window_form form .input_file_wrapper::-moz-placeholder, .feedback__window_form form input::-moz-placeholder, .feedback__window_form form textarea::-moz-placeholder, .feedback__window_form form .checkbox::-moz-placeholder, .feedback__window_form form .input_file_wrapper::-moz-placeholder {
+        font-size: 12px; }
+      .contacts-section_wrapper .feedback__window_form form input:-ms-input-placeholder, .contacts-section_wrapper .feedback__window_form form textarea:-ms-input-placeholder, .contacts-section_wrapper .feedback__window_form form .checkbox:-ms-input-placeholder, .contacts-section_wrapper .feedback__window_form form .input_file_wrapper:-ms-input-placeholder, .feedback__window_form form input:-ms-input-placeholder, .feedback__window_form form textarea:-ms-input-placeholder, .feedback__window_form form .checkbox:-ms-input-placeholder, .feedback__window_form form .input_file_wrapper:-ms-input-placeholder {
+        font-size: 12px; }
+      .contacts-section_wrapper .feedback__window_form form input::-ms-input-placeholder, .contacts-section_wrapper .feedback__window_form form textarea::-ms-input-placeholder, .contacts-section_wrapper .feedback__window_form form .checkbox::-ms-input-placeholder, .contacts-section_wrapper .feedback__window_form form .input_file_wrapper::-ms-input-placeholder, .feedback__window_form form input::-ms-input-placeholder, .feedback__window_form form textarea::-ms-input-placeholder, .feedback__window_form form .checkbox::-ms-input-placeholder, .feedback__window_form form .input_file_wrapper::-ms-input-placeholder {
+        font-size: 12px; }
+      .contacts-section_wrapper .feedback__window_form form input::placeholder, .contacts-section_wrapper .feedback__window_form form textarea::placeholder, .contacts-section_wrapper .feedback__window_form form .checkbox::placeholder, .contacts-section_wrapper .feedback__window_form form .input_file_wrapper::placeholder, .feedback__window_form form input::placeholder, .feedback__window_form form textarea::placeholder, .feedback__window_form form .checkbox::placeholder, .feedback__window_form form .input_file_wrapper::placeholder {
+        font-size: 12px; }
+    .contacts-section_wrapper .feedback__window_form form .checkbox-square, .feedback__window_form form .checkbox-square {
+      margin-right: 5px; }
+    .contacts-section_wrapper .feedback__window_form .checkbox label, .feedback__window_form .checkbox label {
+      font-size: 8px; }
+  .footer-section_wrapper {
+    height: 250px;
+    padding-top: 20px;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px; }
+  .footer-section__contacts {
+    width: 100%;
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    margin-bottom: 15px; }
+    .footer-section__contacts a {
+      font-size: 10px;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      white-space: nowrap; }
+      .footer-section__contacts a img {
+        padding-right: 5px; }
+  .footer-section__menu {
+    margin-bottom: 15px;
+    width: 100%;
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    text-align: center; }
+  .footer-section__copyright {
+    margin-bottom: 15px;
+    text-align: center;
+    width: 100%; }
+  .footer-section__logo {
+    width: 280px; } }
