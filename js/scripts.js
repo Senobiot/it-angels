@@ -9,13 +9,17 @@ $(document).ready( function() {
 	});
 
 	// ===============================burger menu ===================================
-
-	$(".burger, .header__navigation ul li a, .header__navigation .submenu a, .header_logo").click(function(){
+	$(".burger").click(function(){
 		$("body").toggleClass("lock");
 		$(".header").toggleClass("close");
 		$(".burger").toggleClass("open");
 	});
 
+	$(".header__navigation ul li a, .header__navigation .submenu a, .header_logo").click(function(){
+		$("body").removeClass("lock");
+		$(".burger").removeClass("open");
+		$(".header").addClass("close");
+	});
 	// =====================================input file area =============================
 
 	$(".input_file").change(function(){
@@ -28,7 +32,6 @@ $(document).ready( function() {
 	$(".feedback__window_close-cross").click(function(){
 		$(".feedback,.feedback__window").addClass("close");
 		if ($(".burger").hasClass("open")) {
-			console.log("open");
 		}
 		else {
 			$("body").toggleClass("lock")}
