@@ -30,11 +30,9 @@ body {
 	}
 	&_close {
 		position: absolute;
-		right: 0;
-		top: 0;
 		cursor: pointer;
-		top: 6px;
-		right: 8px;
+		top: 3px;
+		right: 3px;
 		width: 15px;
 		height: 15px;
 		&:before, &:after {
@@ -88,7 +86,7 @@ body {
 			position: absolute;
 			cursor: pointer;
 			content: '';
-			top: 3%;
+			top: 10px;
 			right: 2%;
 			width: 15px;
 			height: 15px;
@@ -331,14 +329,59 @@ body {
 		border-radius: 2px;
 	}
 }
-
+.burger {
+	display: none;
+	& span {
+		transition: 0.5s;
+		position: absolute;
+		top: 15px;
+		width: 40px;
+		height: 3px;
+		background-color: #3A2F3E;
+	}
+	&:before, &:after {
+		transition: 0.5s;
+		content: '';
+		position: absolute;
+		top: 26px;
+		width: 30px;
+		height: 3px;
+		background-color: #3A2F3E;
+	}
+	&:after {
+		top: 4px;
+	}
+	&.open {
+		transition: 0.5s;
+		left: auto;
+		right: 20px;
+		& span {
+			transition: 0.5s;
+			transform: scale(0);
+		}
+		&:after, &:before {
+			top: 12px;
+			transition: 0.5s;
+			transform: rotate(-45deg);
+			background-color: rgba(255,255,255,1);
+		}
+		&:before {
+			transition: 0.5s;
+			top: 12px;
+			transform: rotate(45deg);
+			background-color: rgba(255,255,255,1);
+		}
+	}
+}
 // =======================section service ============================================
 .main-section {
+	overflow: hidden;
 	max-width: 1920px;
 	margin: 0 auto;
 	height: 760px;
 	background: url('../img/main_bg.jpg') 50%/cover no-repeat;
 	color: #fff;
+	position: relative;
 	&__wrapper {
 		padding-left: 100px;
 		padding-top: 230px;
@@ -348,6 +391,7 @@ body {
 			position: absolute;
 			right: 100px;
 			top: 100px;
+			animation: rocket 2s linear forwards;
 			& img {
 				width: 100%;
 			}
@@ -356,6 +400,7 @@ body {
 			right: 120px;
 			top: 295px;
 			z-index: 1;
+			animation: notebook 2s linear forwards;
 		}
 		&_title {
 			max-width: 470px;
@@ -368,6 +413,7 @@ body {
 			font-size: 24px;
 			line-height: 2;
 			margin-bottom: 55px;
+			animation: text 2s linear forwards;
 			& ul li {
 				list-style-type: disc;
 			}
@@ -433,12 +479,24 @@ body {
 	39%{transform: rotate(-45deg);}
 	40%{transform: rotate(-40deg);}
 	41%{transform: rotate(-45deg);}
-	100%{transform: translateY(-100vh);}
+	100%{transform: translateY(-200vh);}
 }
-
+@keyframes rocket {
+	0%{transform: translateY(-200vmax);}
+	100%{transform: translateY(0);}
+}
+@keyframes notebook {
+	0%{transform: translateY(200vmax);}
+	100%{transform: translateX(0);}
+}
+@keyframes text {
+	0%{transform: translateX(200vmax);}
+	100%{transform: translateX(0);}
+}
 // =======================section service ============================================
 
 .service-section {
+	overflow: hidden;
 	background-color: #f7f8f9;
 	height: 550px;
 	&__content {
@@ -517,7 +575,11 @@ body {
 			text-align: center;
 		}
 		&_picture {
-			text-align: center;
+			width: 50%;
+			margin: 0 auto;
+			& img {
+				width: 100%;
+			}
 		}
 		&_picture-description {
 			max-width: 610px;

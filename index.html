@@ -48,8 +48,9 @@
 	</div>
 
 	<!-- =========================header=========================== -->
-	
-	<header class="header">
+	<div class="burger"><span></span></div>
+
+	<header class="header close">
 		<div class="wrapper">
 			<div class="header_logo" href="#main-section">
 				<img src="img/main_logo.png" alt="It Angels Logo">
@@ -76,13 +77,12 @@
 	<!-- ========================================= MAIN-section======================================= -->
 
 	<section class="main-section" id="main-section">
-		<!-- 	<div class="speedy">Ваш сайт ускорен на <span>146%</span></div> -->
 		<div class="main-section__wrapper wrapper">
 			<div class="main-section__content">
-				<div class="revealator-zoomout revealator-once revealator-duration5 notebook"><img src="img/main_notebook.png" alt="notebook"></div>
-				<div class="revealator-slideup revealator-once revealator-duration20 revealator-delay20 rocket"><img src="img/main_rocket-1.png" alt="rocket"></div>
+				<div class="notebook"><img src="img/main_notebook.png" alt="notebook"></div>
+				<div class="rocket"><img src="img/main_rocket-1.png" alt="rocket"></div>
 				<h1 class="main-section__content_title">Ускорение сайтов на 1С-Битрикс</h1>
-				<div class="main-section__content_features revealator-slideup revealator-once  revealator-delay10">
+				<div class="main-section__content_features">
 					<ul>
 						<li>Комплексный аудит</li>
 						<li>Оптимизация серверной части</li>
@@ -365,31 +365,55 @@
 		}
 	</script> -->
 	<script>
+
+
 		$(document).ready( function() {
+			// ===========================cokes appear===============================
 			setTimeout(function(){
 			$(".cokes").removeClass("hidden");
 				}, 6000);
+
+			$(".cokes_close, .cokes_button").click(function(){
+				$(".cokes").addClass("hidden");
+			});
+
+			// ===============================burger menu ===================================
+
+			$(".burger, .header__navigation ul li a, .header__navigation .submenu a, .header_logo").click(function(){
+				$("body").toggleClass("lock");
+				$(".header").toggleClass("close");
+				$(".burger").toggleClass("open");
+			});
+
+			// =====================================input file area =============================
 
 			$(".input_file").change(function(){
 				var filename = $(this).val().replace(/.*\\/, "");
 				$(".input_file_label span").html(filename);
 			});
-			$(".cokes_close, .cokes_button").click(function(){
-				$(".cokes").addClass("hidden");
-			});
+
+			// =============================feeback block ============================================
+
 			$(".feedback__window_close-cross").click(function(){
 				$(".feedback,.feedback__window").addClass("close");
-				$("body").removeClass("lock");
+				if ($(".burger").hasClass("open")) {
+					console.log("open");
+				}
+				else {
+					$("body").toggleClass("lock")}
 			})
 			$(".header_feedback, .converter-hover_button, .tile_button, .prices-section__footer_button").click(function(){
 				$(".feedback, .feedback__window").removeClass("close");
 				$("body").addClass("lock");
 			})
 
+			// ===============================fly rocket===============================================
+
 			$(".main-section__content_button").click(function(){
 				$(".rocket").css("animation", "fly 5s linear forwards");
 			});
 
+			// =====================================Hover Tiles Converter =============================
 			$(".converter-wrapper").hover(
 				function(){
 					$(this).children(".converter.unhover").css("opacity", "0");
@@ -402,6 +426,9 @@
 					;
 				}
 			);
+
+			// =====================================tabs with change pic & content =========================
+
 			$(".tabs__header_title").click(function(){
 				$(".tabs__header_title").removeClass("shown");
 				$(this).addClass("shown");
@@ -409,6 +436,8 @@
 				$(".tabs__content_pictures .picture, .tabs__content_description .description").removeClass("shown");
 				$(".tabs__content_pictures .picture, .tabs__content_description .description").filter("."+select).addClass("shown");
 			});
+
+			// =====================================Hover Prices Tiles =============================
 			$(".prices-section__content_tile").hover(
 					function(){
 						$(this).children(".tile_button").css("background", "#1141c9");
@@ -422,7 +451,7 @@
 					event.preventDefault();
 					let page_id = $(this).attr("href");
 					let offset = $(page_id).offset().top;
-					$("body, html").animate({scrollTop : offset-65}, 1000);
+					$("body, html").animate({scrollTop : offset-60}, 1000);
 			})
 			$(".drop_menu").click(function(){
 				$(".submenu").toggleClass("open");
@@ -430,12 +459,11 @@
 			$(".submenu a").click(function(){
 				$(".submenu").removeClass("open");
 			});
-			// =============================fade menu ===========================
+			// =============================fade menu  fade ===========================
 
 			$(window).scroll(function(){
-				let scroll=$(window).scrollTop();
-				console.log(scroll);
-				if (scroll>670) {
+				let scroll=$(window).scrollTop();	
+				if (scroll>670 ) {
 					$(".header").css("background-color", "rgba(35, 46, 67, 0.6)");
 				 } 
 				else {
